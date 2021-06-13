@@ -117,8 +117,8 @@ profile:
    # My Personal Works
   works:
    name:
-     link: http://www.example.com
-     date: 2016
+     link: https://blog-3vw.pages.dev
+     date: 2021
   # My Personal Projects
   projects:
     JoryPein/NaviPage: https://github.com/JoryPein/NaviPage
