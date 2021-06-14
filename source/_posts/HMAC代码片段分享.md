@@ -6,7 +6,7 @@ tags:
   - Cryptography
   - Snippet
   - Python
-  - Nodejs
+  - Javascript
 ---
 ## 各语言的实现
 
