@@ -1,12 +1,12 @@
 ---
 title: 使用with上下文实现代码计时功能
 date: 2021-06-14 12:29
-categories: 
-  - Snippet
+categories: Snippet
 tags: 
-  - Time
   - Snippet
   - Python
+  - Context
+  - Time
 ---
 ### Python
 
