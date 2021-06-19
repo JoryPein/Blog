@@ -14,5 +14,9 @@
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="<%- url_for(post.path) %>#comments" class="article-comment-link"><%= __('article.comments') %></a></span>
         <%- partial('post/wordcount') %>
     </p>
-
+    
 </article>
+<% if (theme.comment.type === 'gitalk'){ %>
+	<div id="gitalk-container"></div>
+	<%- include post/gitalk.ejs %>
+<% } %>

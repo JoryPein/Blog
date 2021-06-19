@@ -47,7 +47,7 @@ comment:
     repo: Blog #必须. GitHub repository.
     ClientID: 056bdacb76a9e4bcb965 #必须. GitHub Application Client ID.
     ClientSecret: 0ffba4fdf83282c3212dab449113b8da737c7f8e #必须. GitHub Application Client `ecret.
-    labels: com
+    labels: 'comments'
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey
