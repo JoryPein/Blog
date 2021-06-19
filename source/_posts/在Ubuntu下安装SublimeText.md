@@ -1,7 +1,8 @@
 ---
 title: 在Ubuntu下安装SublimeText
 date: 2021-06-18 09:30
-categories: Ubuntu
+categories: 
+  - Ubuntu
 tags:
   - Linux
   - Ubuntu

@@ -7,7 +7,7 @@ menu:
   # Repository: repository  # github repositories
 #  Books: books  # 豆瓣书单
   Links: links  # 友链
-  About: about  # 关于
+  # About: about  # 关于
 
 # Enable/Disable menu icons
 menu_icons:
@@ -37,16 +37,17 @@ pagination:
     alwayShow: true
 
 comment:
-  type: # gitalk  # 启用哪种评论系统
+  type: gitalk  # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   livere:
     uid: # enter youyan uid
   gitalk: # gitalk. https://gitalk.github.io/
-    owner: jorypein #必须. GitHub repository 所有者，可以是个人或者组织。
-    admin: jorypein #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-    repo: blog-comment #必须. GitHub repository.
-    ClientID:  #必须. GitHub Application Client ID.
-    ClientSecret:  #必须. GitHub Application Client `ecret.
+    owner: JoryPein #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin: JoryPein #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo: Blog #必须. GitHub repository.
+    ClientID: 056bdacb76a9e4bcb965 #必须. GitHub Application Client ID.
+    ClientSecret: 0ffba4fdf83282c3212dab449113b8da737c7f8e #必须. GitHub Application Client `ecret.
+    labels: com
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey
@@ -71,7 +72,7 @@ postCount:
 search: true # enable local search
 toc: true
 fancybox: true
-license: 'This article is available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a> License'
+# license: 'This article is available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a> License'
 footer:
 #  custom:
 
@@ -127,7 +128,7 @@ profile:
 
 
 widgets:
-#  - board
+  # - board
   - category
   - tag
   - tagcloud

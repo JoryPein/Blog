@@ -1,7 +1,8 @@
 ---
 title: HMAC相关代码片段
 date: 2021-06-13 15:36
-categories: Snippet
+categories: 
+  - Snippet
 tags: 
   - Cryptography
   - Snippet
