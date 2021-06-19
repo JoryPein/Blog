@@ -73,18 +73,12 @@ profile:
   # gravatar: example@example.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: Jorymer
   author_title: “ 见诸相非相，即见如来 ”
-  author_description: Having fun
-  # location: Guangdong China
   follow: https://github.com/jorypein
   # Social Links
   social:
     links:
       github: https://github.com/jorypein
-      telegram: https://t.me/jorymer
-      # twitter: https://twitter.com/example
-      # facebook: /
-      # dribbble: /
-#      behance: https://www.behance.net/cofess
+      telegram: mailto:jorypein@gmail.com
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
 
