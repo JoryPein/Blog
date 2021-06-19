@@ -5,4 +5,9 @@
     <% if(theme.postCount.min2read){  %>
         <span class="post-readcount" itemprop="timeRequired"><%= __('article.readcount') %>: <%= min2read(post.content) %>(<%= __('unit.time') %>)</span>
     <% } %>
+	<% if (theme.busuanzi && theme.busuanzi.enable && !is_home()){ %>
+		<!-- 不蒜子统计 -->
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<i class="iconfont icon-friend"></i>访问量:<span id="busuanzi_value_page_pv"></span>
+	<% } %>
 <% } %>
