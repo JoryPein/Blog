@@ -3,17 +3,17 @@
 <div id="gitalk-container"></div>
 <script type="text/javascript">
   var gitalk = new Gitalk({
-    clientID: '<%= theme.gitalk.ClientID %>',
-    clientSecret: '<%= theme.gitalk.ClientSecret %>',
-    repo: '<%= theme.gitalk.repo %>',
-    owner: '<%= theme.gitalk.owner %>',
-    admin: '<%= theme.gitalk.adminUser %>',
-    id: <%= theme.gitalk.ID %>,
-    labels: '<%= theme.gitalk.labels %>'.split(',').filter(l => l),
-    perPage: <%= theme.gitalk.perPage %>,
-    pagerDirection: '<%= theme.gitalk.pagerDirection %>',
-    createIssueManually: <%= theme.gitalk.createIssueManually %>,
-    distractionFreeMode: <%= theme.gitalk.distractionFreeMode %>
+    clientID: '<%= theme.comment.gitalk.ClientID %>',
+    clientSecret: '<%= theme.comment.gitalk.ClientSecret %>',
+    repo: '<%= theme.comment.gitalk.repo %>',
+    owner: '<%= theme.comment.gitalk.owner %>',
+    admin: '<%= theme.comment.gitalk.adminUser %>',
+    id: <%= theme.comment.gitalk.ID %>,
+    labels: '<%= theme.comment.gitalk.labels %>'.split(',').filter(l => l),
+    perPage: <%= theme.comment.gitalk.perPage %>,
+    pagerDirection: '<%= theme.comment.gitalk.pagerDirection %>',
+    createIssueManually: <%= theme.comment.gitalk.createIssueManually %>,
+    distractionFreeMode: <%= theme.comment.gitalk.distractionFreeMode %>
   })
   gitalk.render('gitalk-container')
 </script>
