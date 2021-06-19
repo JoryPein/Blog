@@ -38,9 +38,6 @@ pagination:
 
 comment:
   type: gitalk  # 启用哪种评论系统
-  disqus:  # enter disqus shortname here
-  livere:
-    uid: # enter youyan uid
   gitalk: # gitalk. https://gitalk.github.io/
     owner: JoryPein #必须. GitHub repository 所有者，可以是个人或者组织。
     admin: JoryPein #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
@@ -48,17 +45,6 @@ comment:
     ClientID: 056bdacb76a9e4bcb965 #必须. GitHub Application Client ID.
     ClientSecret: 0ffba4fdf83282c3212dab449113b8da737c7f8e #必须. GitHub Application Client `ecret.
     labels: 'comments'
-  valine: # Valine. https://valine.js.org
-    appid:  # your leancloud application appid
-    appkey:  # your leancloud application appkey
-    notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-    verify: false # Verification code
-    placeholder: Just go go # comment box placeholder
-    avatar: mm # gravatar style
-    meta: nick,mail,link # custom comment header
-    pageSize: 10 # pagination size
-    visitor: false # Article reading statistic https://valine.js.org/visitor.html
-
 
 github:
   username: JoryPein
@@ -78,59 +64,29 @@ search: false # enable local search
 toc: true
 fancybox: true
 # license: 'This article is available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a> License'
-footer:
- custom: true
+# footer:
+#  custom: true
 
 profile:
   enabled: true # Whether to show profile bar
   avatar: https://avatars.githubusercontent.com/u/15701970
   # gravatar: example@example.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: Zeorymer
-  author_title: Designer & Developer
+  author: Jorymer
+  author_title: “ 见诸相非相，即见如来 ”
   author_description: Having fun
-  location: Guangdong China
+  # location: Guangdong China
   follow: https://github.com/jorypein
   # Social Links
   social:
     links:
       github: https://github.com/jorypein
-      # telegram: https://t.me/example
+      telegram: https://t.me/jorymer
       # twitter: https://twitter.com/example
       # facebook: /
       # dribbble: /
 #      behance: https://www.behance.net/cofess
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
-
-  # My Personal Links
-  links:
-    # Github: https://github.com/jorypein
-    # Blog: http://www.example.top
-    # Email: jorypein@gmail.com
-    # Wechat: example
-  # My Personal Labels
-  labels:
-    - 前端
-    - Node.js
-    - Golang
-    - Linux日常使用
-  skills:
-    Python: ★★★★☆
-    Golang: ★★★☆☆
-    Javascript: ★★★☆☆
-    HTML+CSS: ★★★☆☆
-    Git: ★★★☆☆
-   # My Personal Works
-  works:
-   name:
-     link: https://blog-3vw.pages.dev
-     date: 2021
-  # My Personal Projects
-  projects:
-    JoryPein/NaviPage: https://github.com/JoryPein/NaviPage
-    JoryPein/SixYao: https://github.com/JoryPein/SixYao
-    JoryPein/bi2har: https://github.com/JoryPein/bi2har
-
 
 widgets:
   - board
@@ -142,6 +98,22 @@ widgets:
 
 #widget behaivor
 show_count: true
+
+markdown:
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  anchors:
+    level: 1
+    permalink: false
+    separator: '-'
+  plugins:
+    - '@iktakahiro/markdown-it-katex'
+    - markdown-it-emoji
 
 cdn:
   katex: //cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css
