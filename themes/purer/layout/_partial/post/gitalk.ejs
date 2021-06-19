@@ -7,13 +7,10 @@
     clientSecret: '<%= theme.comment.gitalk.ClientSecret %>',
     repo: '<%= theme.comment.gitalk.repo %>',
     owner: '<%= theme.comment.gitalk.owner %>',
-    admin: '<%= theme.comment.gitalk.adminUser %>',
-    id: <%= theme.comment.gitalk.ID %>,
+    admin: '<%= theme.comment.gitalk.admin %>',
+    id: location.pathname,
     labels: '<%= theme.comment.gitalk.labels %>'.split(',').filter(l => l),
-    perPage: <%= theme.comment.gitalk.perPage %>,
-    pagerDirection: '<%= theme.comment.gitalk.pagerDirection %>',
-    createIssueManually: <%= theme.comment.gitalk.createIssueManually %>,
-    distractionFreeMode: <%= theme.comment.gitalk.distractionFreeMode %>
+    distractionFreeMode: false
   })
   gitalk.render('gitalk-container')
 </script>
