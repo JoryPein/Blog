@@ -1,5 +1,5 @@
 ---
-title: 使用本地源，制作Docker镜像
+title: 使用本地源，制作Ubuntu的Docker镜像
 date: 2021-06-20 12:00
 categories:
   - Docker
@@ -13,7 +13,7 @@ tags:
 
 ## 步骤
 
-创建文件dockerfile文件，命名为ubuntu1804u
+创建名为ubuntu1804u的dockerfile文件
 
 ```dockerfile
 FROM ubuntu:18.04
