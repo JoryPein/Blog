@@ -13,7 +13,7 @@ tags:
 
 ### Javascript
 
-``` bash
+``` javascript
 async function get_timestamp_sign(secret) {
     async function hmac_sha256_b64(secret, data) {
         const encoder = new TextEncoder()
@@ -37,7 +37,7 @@ async function get_timestamp_sign(secret) {
 
 ### Python
 
-``` bash
+``` python
 import time
 import hmac
 import hashlib
