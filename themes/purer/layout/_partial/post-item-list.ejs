@@ -1,13 +1,15 @@
 <section class="year-archive">
     <header>
-        <h1><a <%if (path !== '#') {%>href="<%= url_for(path) %>" <% } %>><%= title %></a></h1>
+        <h1  style="color:#2bb48a;"><a <%if (path !== '#') {%>href="<%= url_for(path) %>" <% } %>><%= title %></a></h1>
     </header>
-    <div class="archive-content">
+    <ul class="archive-content">
         <% posts.forEach(function (post) { %>
-            <a href="<%= url_for(post.path) %>" class="post-item">
-                <div class="post-time"><%= date(post.date, dateFormat) %></div>
-                <div class="post-title"><%= post.title%></div>
-            </a>
+            <li style="margin-top:10px;">
+                <div class="post-time" style="color:#2bb48a; width:80px; float:left;"><%= date(post.date, dateFormat) %></div>
+                <a class="post-title" style="color:#c9cacc;" href="<%= url_for(post.path) %>" >
+                    <%= post.title%>
+                </a>
+            </li>
         <% }) %>
-    </div>
+        </ul>
 </section>
